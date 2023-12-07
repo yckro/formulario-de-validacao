@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    height: 100vh;
+    background: url(../images/bg-repeat.jpg);
+    background-size:contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 402px;
+    border: 1px solid white;
+}
+
+.container .pergunta{
+    width: 50%;
+    padding:50px;
+}
+.container .pergunta .titulo{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container .pergunta .texto{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    padding-top: 11px;
+}
+
+.formulario {
+    width: 340px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario .input-item .input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px;
+    width: 100%;
+}
+
+.formulario .input-item .input::placeholder {
+    font-weight: 700;
+}
+
+.formulario .input-item .input.maior {
+    height: 100px;
+    resize: none;
+    margin-bottom: 7px;
+}
+
+.formulario .input-item.preenchido .input {
+    border-color: #3CCC87;
+}
+
+.formulario .input-item.vazio .input {
+    border-color: red;
+}
+
+.formulario .input-item .aviso {
+    display: none;
+    color: red;
+    font-size: 8px;
+    margin-top: -15px;
+    margin-bottom: 6px;
+}
+
+.formulario .input-item .aviso.ultimo {
+    display: none;
+    margin-top: -7px;
+    margin-bottom: 7px;
+}
+
+.formulario .aviso.aviso-ativo {
+    display: block;
+}
+
+.formulario .aviso.ultimo.aviso-ativo {
+    display: block;
+}
+
+
+.formulario .obrigatorio {
+    margin-bottom: 20px;
+    transform: translateX(-7px);
+}
+
+.formulario .btn {
+    font-weight: 700;
+    background-color: #3CCC87;
+    color: white;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
